@@ -436,6 +436,7 @@ section .title::after{
     padding: 25px 0;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 10px;
     transition: all 0.3s ease;
     /* box-shadow: 10px 22px 38px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -453,6 +454,10 @@ section .title::after{
     justify-content: center;
     margin-bottom: -20px;
     transition: all 0.3s ease;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 .projects .carousel .card:hover .box{
     transform: scale(1.05);
@@ -463,6 +468,29 @@ section .title::after{
     font-family: 'Poppins';
     margin: 10px 0 7px 0;
 }
+
+.projects .carousel .card .box ul{
+    list-style: none;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .projects .carousel .card .box  ul li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.3;
+  }
+  
+  .projects .carousel .card .box  ul li::before{
+      content: "➤"; /* custom symbol */
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+      font-size: 1.2rem;
+      top: 0;
+    }
 .projects .carousel .card img{
     height: 300px;
     width: 500px;
@@ -538,6 +566,7 @@ section .title::after{
     justify-content: center;
     margin-bottom: -20px;
     transition: all 0.3s ease;
+    
 }
 .certifications .carousel .card:hover .box{
     transform: scale(1.05);
