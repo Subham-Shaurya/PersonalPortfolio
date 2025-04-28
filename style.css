@@ -327,6 +327,7 @@ section .title::after{
 }
 .about .about-content .right p{
     text-align: justify;
+    font-style: normal;
 }
 .about .about-content .right a{
     display: inline-block;
